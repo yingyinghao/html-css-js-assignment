@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antra LIFE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+            grid-gap: 5px;
+            width: 80%;
+            border: 2px solid black;
+            background: white;
+        }
+        .header {
+            grid-column: span 4; /* Header spans all 4 columns */
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            padding: 20px;
+        }
+        .box {
+            border: 1px solid black;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            font-size: 1.2em;
+        }
+        .span-2 {
+            grid-column: span 2; /* Span 2 columns */
+        }
+        .span-3 {
+            grid-column: span 3; /* Span 3 columns */
+        }
+        .nested {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr); /* Two rows for nested table */
+            width: 100%;
+            height: 100%;
+        }
+        .nested div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Antra LIFE</div>
+        <!-- First Row -->
+        <div class="box span-2">Google</div>
+        <div class="box span-2">GitHub</div>
+        <!-- Second Row -->
+        <div class="box">FB</div>
+        <div class="box">GMail</div>
+        <div class="box">YouTube</div>
+        <div class="box">2048</div>
+        <!-- Third Row -->
+        <div class="box">Food</div>
+        <div class="box span-2">Game</div> <!-- "Game" spans 2 columns -->
+        <div class="box">
+            <!-- Nested Table -->
+            <div class="nested">
+                <div>Social Life</div>
+                <div>Sleep</div>
+            </div>
+        </div>
+        <!-- Fourth Row -->
+        <div class="box span-3">Beer ></div> <!-- "Beer >" spans 3 columns -->
+        <div class="box">WC</div> <!-- "WC" takes the last column -->
+    </div>
+</body>
+</html>
