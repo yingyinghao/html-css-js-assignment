@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In the Twilight of One's Life</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #e0efdc;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        .sidebar img {
+            width: 80%;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .sidebar a:hover {
+            color: #6c8c4d;
+            font-weight: bold;
+        }
+
+        .sidebar h1 {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            font-size: 24px;
+            color: #4b602e;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #4b602e;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .news, .messages {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .news div, .messages div {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .news div a, .messages div a {
+            display: block;
+            margin-top: 10px;
+            color: #4b602e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .news div a:hover, .messages div a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e0efdc;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #4b602e;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>In the Twilight of One's Life</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="main-content">
+        <div id="home" class="section">
+            <h2>Welcome to Home Page</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eros nisl, volutpat eu augue a, pharetra consequat ex. Integer sit amet volutpat dolor. Nulla facilisi. Nullam ut neque vel ligula vulputate facilisis a et nisl. Cras vestibulum nunc nec nibh accumsan, non feugiat tellus malesuada.</p>
+        </div>
+
+        <div id="news" class="section">
+            <h2>News</h2>
+            <div class="news">
+                <div>
+                    <p><strong>August 2, 2009</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+                <div>
+                    <p><strong>July 28, 2009</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="messages" class="section">
+            <h2>Messages</h2>
+            <div class="messages">
+                <div>
+                    <p><strong>August 1, 2009</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#">See all messages</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="products" class="section">
+            <h2>Our Free Products</h2>
+            <div class="news">
+                <div>
+                    <p><strong>Product 1</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div>
+                    <p><strong>Product 2</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div>
+                    <p><strong>Product 3</strong></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        In the twilight of one's life &copy; August 2009 | <a href="#">HTML</a> | <a href="#">CSS</a>
+    </div>
+</body>
+</html>

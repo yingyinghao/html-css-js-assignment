@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            background-color: #333;
+            color: #ccc;
+            padding: 20px 40px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Locations Section */
+        .footer-locations {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-locations h3 {
+            color: #fff;
+        }
+
+        .footer-locations img {
+            width: 100%;
+            max-width: 250px;
+        }
+
+        /* Footer Menu Section */
+        .footer-menu {
+            display: flex;
+            flex: 2;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .footer-menu div {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .footer-menu h3 {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-menu ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-menu ul li a {
+            color: #ccc;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer-menu ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Corporate Info */
+        .footer-corporate {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-corporate h3 {
+            color: #fff;
+        }
+
+        .footer-corporate p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            color: #ccc;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .footer-social a:hover {
+            color: #fff;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-locations">
+                <h3>Our Locations</h3>
+                <img src="https://via.placeholder.com/250x150?text=Map" alt="World Map">
+            </div>
+
+            <!-- Corporate Office Section -->
+            <div class="footer-corporate">
+                <h3>Corporate Office</h3>
+                <p>25535 Ridge Circle</p>
+                <p>Suite 300</p>
+                <p>Phone: 703-894-5456</p>
+                <p>Email: info@antra.net</p>
+                <div class="footer-social">
+                    <a href="https://facebook.com" target="_blank" title="Facebook"></a>
+                    <a href="https://twitter.com" target="_blank" title="Twitter"></a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn"></a>
+                </div>
+            </div>
+
+            <!-- Footer Menu -->
+            <div class="footer-menu">
+                <div>
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Technology Services</a></li>
+                        <li><a href="#">Business Advisory</a></li>
+                        <li><a href="#">Professional Services</a></li>
+                        <li><a href="#">Web & Mobile Dev</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">White Papers</a></li>
+                        <li><a href="#">Tech Trends 2023</a></li>
+                        <li><a href="#">Agile Transformations</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            &copy; 2024 Antra Inc. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

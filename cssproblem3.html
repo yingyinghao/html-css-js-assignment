@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            position: sticky;
+            top: 0;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header .apply-now {
+            background-color: #ff9900;
+            color: #fff;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 4px;
+            justify-items: flex-end;
+        }
+
+        .header .apply-now:hover {
+            background-color: #e68a00;
+        }
+
+        .news-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .news-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .news-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .news-card {
+            display: flex;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .news-content {
+            flex: 1;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .news-meta {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 12px;
+        }
+
+        .news-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        .news-tags {
+            font-size: 12px;
+            color: #888;
+        }
+
+        .pagination {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .pagination a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="#" class="apply-now">Apply Now</a>
+    </div>
+
+    <div class="news-container">
+        <div class="header-title">News</div>
+
+        <div class="news-section">
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <div class="news-content">
+                    <div class="news-title">Feedback from Antra Inc Conf May 2014</div>
+                    <div class="news-meta">02/06/2014 | Published by: Evija Grudzinska</div>
+                    <div class="news-description">Responses from the questionnaire about the usefulness of the first Antra Inc Conf...</div>
+                    <div class="news-tags">Tags: Conference, Feedback</div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <div class="news-content">
+                    <div class="news-title">Summer Break - Schedule for Level #1</div>
+                    <div class="news-meta">13/06/2014 | Published by: Alexandra Svaliona</div>
+                    <div class="news-description">Summer break schedule announced for levels 1-10, starting from July...</div>
+                    <div class="news-tags">Tags: Summer, Education</div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="https://via.placeholder.com/150" alt="News Image">
+                <div class="news-content">
+                    <div class="news-title">Level #0 Starts on the 5th of July</div>
+                    <div class="news-meta">18/06/2014 | Published by: Alexandra Svaliona</div>
+                    <div class="news-description">The deadline for applications is extended to the 3rd of July...</div>
+                    <div class="news-tags">Tags: Applications, Deadlines</div>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+        </div>
+    </div>
+</body>
+</html>
